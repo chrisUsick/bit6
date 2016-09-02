@@ -1,0 +1,113 @@
+\documentclass[11pt,british]{article}
+\usepackage{mathptmx}
+\usepackage{fullpage}
+\usepackage{setspace}
+\doublespacing
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\usepackage{babel}
+\usepackage{minted}
+\usepackage{graphicx}
+
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+\usepackage{mdwlist}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage[backend=biber,
+style=apa
+% style=alphabetic
+%style=reading
+% language=english
+]{biblatex}
+\DeclareLanguageMapping{british}{british-apa}
+\bibliography{bibliography}
+
+\title{Reading 1}
+\author{Christopher Usick }
+\date{September 2016}
+
+\begin{document}
+% \begin{titlepage}
+% % \vspace*{\fill}
+% \begin{center}
+%   {\huge Reading 1 \\[0.4cm]}
+%   % \HRule \\[1.5cm]
+%   % \emph{Prepared By:}\\
+%   % Chris \textsc{Usick}\\
+%   %
+%   % \emph{Prepared For:} \\
+%   % Geoffrey \textsc{Bresch}
+%
+%   % \vfill
+%
+%   % Bottom of the page
+%   {\large October, 2014}
+% \end{center}
+% % \vspace*{\fill}
+% \end{titlepage}
+
+% ToC
+% \tableofcontents
+% ToL
+% \listoflistings
+\maketitle
+
+% \maketitle
+\input{body}
+\begin{singlespacing}
+\newpage
+\printbibliography
+\end{singlespacing}
+\end{document}
