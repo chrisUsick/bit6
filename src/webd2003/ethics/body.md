@@ -15,12 +15,11 @@ When hacking a system it is essential to understand as much as possible about it
 Depending on the system and the nature of the project there could be severe consequences if a mistake is made or if the hacker doesn't have adequate knowledge of the system. As such, an individual should prepare for all worst case scenarios and have detailed remediation strategies should something go wrong.
 
 ## don't act alone
-		* ideally work with another security specialist or co-worker
-		* document everything
-Whenever possible, a hacker should work with others, including security specialists and/or others who are knowledgeable about the system being hacked. 
+Whenever possible, a hacker should work with others, including security specialists and/or others who are knowledgeable about the system being hacked. This will make completing the project easier and avoid potential pitfalls. Another good practice is to document everything that is done to hack a system. By creating a "paper trail" of activity during hacking exercise any problems at a later date with the system can't be blamed on the hacker.
 
 ## understand the expected outcomes of the project
 		* do get caught committing greyhat hacking by not understanding the ramifications of your actions
+Without an thorough knowledge of the system, the project, and the tools being used a hacker can easily do more damage than was anticipated. Two major pitfalls that can result in "greyhat" hacking is hacking proprietary third party software and exploiting any systems that contain personal data. Many software licenses include usage agreements and if the software is hacked to be used in some other way this may violate that agreement. When hacking systems with personal data, even if you were required to find exploiting 
 
 
 
